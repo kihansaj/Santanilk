@@ -1,0 +1,483 @@
+/*Name : Jayasekara Mudiyanselage Janudi Kihansa
+CB Number : CB009438
+References :
+Images and info from :
+https://www.mandarinoriental.com/dubai/jumeira-beach/luxury-hotel?htl=MODUB&eng=google&src=local
+https://www.theplazany.com/
+https://www.langhamhotels.com/en/the-langham/new-york/?htl=tlnyc&src=organic&eng=google&size=na&cid=yext_profile&y_source=1_MTAwNjI1OTItNzE1LWxvY2F0aW9uLmdvb2dsZV93ZWJzaXRlX292ZXJyaWRl&htl=tlnyc&src=organic&eng=google&size=na&cid=yext_profile&y_source=1_MTAwNjI1OTItNzE1LWxvY2F0aW9uLmdvb2dsZV93ZWJzaXRlX292ZXJyaWRl
+https://www.santani.lk/
+
+Referred W3schools as recommended*/
+
+/*main colors are: blue-rgb(164,218,247), green - rgb(107,172,72), white-RGB (255,255,255) black- rgb(0,0,0)*/
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif; 
+  margin:0px;
+}
+article{
+  font-size: 15px;
+}
+#logo{
+  height: 75px;
+}
+#logo1{
+    background-color: rgb(107,172,72);
+    width:100%;
+}
+nav ul{
+    list-style: none;
+    margin: 0%;
+    padding:0%;
+    overflow: auto;
+    background-color:rgb(164,218,247);  
+}
+nav li{
+    float:left;
+    margin:0;
+}
+li img{
+  height: 30px;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-top: 5px;
+}
+nav li a, .navRight{
+  display:block;
+  color:black;
+  text-align: center;
+  padding:12px 18px;
+  text-decoration: none; 
+}
+.navRight, .scimg{
+  float: right; 
+}
+
+nav ul a:hover{
+  background-color:rgb(107,172,72);
+  color:black;
+} 
+
+#menuBar{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1;
+  top: 0;
+  font-weight:bold;
+  }
+
+#address{
+  float:left;
+  padding-left:25px;
+}
+
+@media screen and (max-width:500px){
+  h1, h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  nav li a, .navRight{
+    display:block;
+    color:black;
+    text-align: center;
+    padding:6px 6px;
+    text-decoration: none; ;
+    text-decoration: none; 
+    font-size:9.19px;
+  }
+  .navRight, .scimg{
+    display:none;
+  }
+  .container{
+    font-size: 7px;
+    width:100%;
+    height: 150px;
+    margin:0;
+    padding:0;
+    bottom: 0%;
+  }
+}
+
+ footer{
+  bottom: 0;
+  color: black;
+  padding-top: 0%;
+  padding-bottom: 0%;
+ }
+
+ .footer-distributed{
+  background-color:rgb(164,218,247);
+  width: 98.7%;
+  text-align: left;
+  font-size: 13px;
+  padding: 12px 10px;
+  display:block;
+ }
+  
+ .footer-distributed .footer-left,
+ .footer-distributed .footer-center,
+ .footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+ }
+  
+ .footer-distributed .footer-left{
+  width: 25%;
+  padding-left: 5%;
+ }
+  
+ .footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+ } 
+ .footer-distributed .footer-center{
+  width: 35%;
+ }
+  
+ .footer-distributed .footer-right{
+  width: 25%;
+  padding-left: 5%;
+ }
+ .footer-distributed .footer-icons{
+  margin-top:2%;
+ }
+  
+ .footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #000000;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+ }
+  
+  
+ @media (max-width: 640px) {
+  #menuBar{
+    position:absolute;
+  }
+  
+  .footer-distributed{
+  font-size:12px;
+  margin:0;
+  width:94.5%;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+  display: block;
+  width:100%;
+  margin-bottom:0px;
+  text-align: center;
+  padding:0;
+  }
+  
+} 
+
+/*Reservation Page CSS*/
+#h4{
+  text-align: center;
+  color:rgb(66, 130, 31);
+  margin-bottom:0;
+}
+
+.image-res{
+  width:400px;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.over {
+  position: relative;
+  bottom: 0;
+  margin-left:22%;
+  background-color: rgba(0, 0, 0, 0.4);
+  width:50%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.container-form input[type=text], .container-form input[type=date],.container-form select, .container-form textarea,
+.container-form input[type=number] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical;/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.container-form {
+  border-radius: 5px;
+  background-color: rgba(107,172,72,0.3);
+  padding: 20px;
+  text-align: left;
+  width:60%;
+  margin-left:20%;
+  margin-bottom:3%;
+}
+
+#h4-1{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0%;
+}
+#navy{
+  color: navy;
+}
+#blue{
+  color:blue;
+}
+#red{
+  color:red;
+}
+#orange{
+  color:orange;
+}
+#button-1, #addtores{
+  margin-left:80%;
+  background-color:rgb(164,218,247);
+  color:black;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor:pointer;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width:500px){
+  .image-res{
+    width:350px;
+  }
+  .row {
+    display: block;
+  }
+  
+  .column {
+    padding: 5px;
+  }
+  .container-form input[type=text], .container-form input[type=date],.container-form select, .container-form textarea,
+.container-form input[type=number] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical;/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.container-form {
+  border-radius: 5px;
+  background-color: rgba(107,172,72,0.3);
+  padding: 20px;
+  text-align: left;
+  width:88%;
+  margin-left:1.5px;
+  margin-bottom:3%;
+}
+#button-1{
+  margin-left:48%;
+}
+}
+
+/*Home page CSS*/
+.entry{
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+}
+.entry1{
+  margin-bottom: 90px;
+  position: relative;
+}
+.para{
+  width:50%;
+  margin-left:25%;
+}
+.cont-1{
+  width:60%;
+  margin-left:20%;
+}
+
+  #img-home{
+    width:480px;
+    margin-top:0;
+    margin-left:10%;
+    transition: 1s;
+  }
+  .desc{
+    background-color: rgba(0,0,0,.2);
+    padding-top: 30px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-bottom: 30px;
+    margin-left:50%;
+    border: rgba(0,0,0,.2) solid;
+    box-shadow: 10px 10px 5px grey;
+    width:30%;
+    
+  }
+  
+  #imgs2{
+    float:left;
+  }
+  #img-home2{
+    width:480px;
+    height:305px;
+    margin-top:0;
+    transition: 1s;
+    margin-left:10%;
+  }
+  .left-list a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  .left-list a:hover{
+    color: rgb(66, 130, 31);
+  }
+  .left-list{
+    text-align: left;
+    margin-left: 90px;
+  }
+  #A1, #A2, #A3, #A4, #A5{
+    float:left;
+    width:250px;
+    height:100px;
+    margin-left: 50px;
+    text-align: left;
+  }
+  .fancy{
+    font-weight: bold;
+    font-size: 18px;
+    transition: 1.5s;
+    text-shadow: 4px 4px 4px rgb(167, 167, 167);
+    text-transform: uppercase;
+  }
+  section .block1{
+    overflow:hidden;
+    position:absolute;
+    width:30%;
+    height:15%;
+    top:54%;
+    left:30%;
+    background-color: rgba(0,0,0,0.6);
+    color: rgb(255,255,255);
+    justify-content: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 30px;
+  }
+
+@media screen and (max-width:500px){
+  .text-block, #button{
+    display:none;
+  }
+  .para{
+    width:100%;
+    margin-left:0%;
+    margin-top: 0;
+  }
+  .container2{
+    margin-top:0%;
+  }
+  .entry{
+    display: flex;
+    margin-bottom: 0px;
+    position: relative;
+    width:0px;
+    flex-wrap: wrap;
+  }
+  .left-list{
+    margin-left: 50px;
+  }
+  #D1, #D2, #D3, #D4, #D5,#D6{
+    display:none;
+  }
+  section .block1{
+    overflow:hidden;
+    position:absolute;
+    width:50%;
+    height:6%;
+    top:22%;
+    left:20%;
+    background-color: rgba(0,0,0,0.6);
+    color: rgb(255,255,255);
+    justify-content: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 30px;
+  }
+  section em{
+    font-size: 12px;
+  }
+  #img-home2, #img-home{
+    width:100%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom:0%;
+  }
+  #imgs{
+    float:left;
+    height:auto;
+  }
+  .container1{
+    display: grid;
+    margin-bottom: 50%;
+
+  }
+  .desc{
+    display: grid;
+    background-color: rgba(0,0,0,.2);
+    padding-top:10px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-bottom: 10px;
+    margin-left:0%;
+    border: rgba(0,0,0,.2) solid;
+    box-shadow: 10px 10px 5px grey;
+    width:95%;
+    height:280px;
+        
+  }
+  .entry1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  .entry1 div{
+    flex: 1 1 250px;
+  }
+  #A1, #A2, #A3, #A4, #A5{
+    
+    height:50px;
+    margin-left: 80px;
+  }
+  .fancy{
+    font-size: 12px;
+  }
+}
